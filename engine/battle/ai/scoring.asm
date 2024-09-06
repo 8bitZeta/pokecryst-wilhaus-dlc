@@ -388,7 +388,7 @@ AI_Smart_EffectHandlers:
 	dbw EFFECT_THUNDER,          AI_Smart_Thunder
 	dbw EFFECT_FLY,              AI_Smart_Fly
 	dbw EFFECT_HEX,              AI_Smart_Hex
-	dbw EFFECT_VENOSHOCK         AI_Smart_Venoshock
+	dbw EFFECT_VENOSHOCK,        AI_Smart_Venoshock
 	db -1 ; end
 
 AI_Smart_Sleep:

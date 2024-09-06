@@ -1064,7 +1064,7 @@ DoBurn:
 	stab
 	checkhit
 	checksafeguard
-	burn
+	burntarget
 	endmove
 
 SkyAttack:
