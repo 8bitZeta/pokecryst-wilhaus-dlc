@@ -159,4 +159,7 @@ MoveEffectsPointers:
 	dw Fly
 	dw DefenseCurl
 	dw BabyDollEyes
+	dw DoBurn
+	dw Hex
+	dw Venoshock
 	assert_table_length NUM_MOVE_EFFECTS

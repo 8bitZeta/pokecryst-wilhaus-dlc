@@ -269,12 +269,96 @@ Moves1:
 	move EFFECT_DEFENSE_DOWN_HIT,   20, FIGHTING,      100, 15,  50      ;ROCK_SMASH
 	move EFFECT_TRAP_TARGET,        15, WATER,          70, 15,   0      ;WHIRLPOOL
 	move EFFECT_BEAT_UP,            10, DARK,          100, 10,   0      ;BEAT_UP
+	;new moves start here
 	move EFFECT_ACCURACY_DOWN_HIT,	80, FAIRY,         100, 10,  10      ;DAZZLE_GLEAM
 	move EFFECT_NORMAL_HIT,         40, FAIRY,         100, 30,   0      ;FAIRY_WIND
 	move EFFECT_SP_ATK_DOWN_HIT,    95, FAIRY,          95, 15,  30      ;MOONBLAST
 	move EFFECT_ATTACK_DOWN_HIT,    90, FAIRY,          90, 10,  10      ;PLAY_ROUGH
-	move EFFECT_LEECH_HIT,         100, FAIRY,         100, 10,   0      ;DRAININGKISS
+	move EFFECT_LEECH_HIT,          60, FAIRY,         100, 10,   0      ;DRAININGKISS
 	move EFFECT_BABYDOLLEYES,        0, FAIRY,         100, 30,   0      ;BABYDOLLEYES
 	move EFFECT_ALWAYS_HIT,         50, FAIRY,         100, 15,   0      ;DISARM_VOICE
 	move EFFECT_SP_ATK_DOWN_HIT,    75, FAIRY,         100, 15, 100      ;SPIRIT_BREAK
+	move EFFECT_CONFUSE_HIT,        90, FAIRY,          95, 10,  20      ;STRANGESTEAM
+	;move EFFECT_HYPER_BEAM,        150, NORMAL,         90,  5,   0      ;GIGA_IMPACT
+	;move EFFECT_NORMAL_HIT,         90, NORMAL,        100, 10,   0      ;HYPER_VOICE
+	;move EFFECT_FACADE,             70, NORMAL,        100, 20,   0      ;FACADE          ;;;;;;;;
+	;move EFFECT_FAKE_OUT,           40, NORMAL,        100, 10,   0      ;FAKE_OUT         ;;;;;;;;
+	;move EFFECT_REFRESH,             0, NORMAL,        100, 20,   0      ;REFRESH         ;;;;;;;;
+	;move EFFECT_NORMAL_HIT,        140, NORMAL,        100, 10,   0      ;BOOMBURST
+    ;move EFFECT_THIEF,              60, NORMAL,        100, 25,   0      ;COVET
+	;move EFFECT_FLARE_BLITZ,       120, FIRE,          100, 15,  10      ;FLARE_BLITZ        ;;;;;;;
+	;move EFFECT_OVERHEAT,          130, FIRE,           90,  5,   0      ;OVERHEAT        ;;;;;;;;;
+	;move EFFECT_BURN,                0, FIRE,           85, 15,   0      ;WILL_O_WISP
+	;move EFFECT_SP_ATK_DOWN_HIT,    75, FIRE,          100, 10, 100      ;MYSTIC_FIRE
+	;move EFFECT_BURN_HIT,           65, FIRE,           95, 15,  10      ;FIRE_FANG 
+	;move EFFECT_BURN_HIT,           80, WATER,         100, 15,  20      ;SCALD
+	;move EFFECT_FLY,                80, WATER,         100, 10,   0      ;DIVE
+	;move EFFECT_NORMAL_HIT,         90, WATER,          90, 10,   0      ;AQUA_TAIL
+	;move EFFECT_PRIOIRTY_HIT,       40, WATER,         100, 20,   0      ;AQUA_JET
+	;move EFFECT_CONFUSE_HIT,        60, WATER,         100, 20,  20      ;WATER_PULSE
+	;move EFFECT_PIVOT,              70, ELECTRIC,      100, 20,   0      ;VOLT_SWITCH   ;;;;;;;;;
+	;move EFFECT_VOLT_TACKLE,       120, ELECTRIC,      100, 15,  10      ;VOLT_TACKLE     ;;;;;;
+	;move EFFECT_PARALYZE_HIT,       20, ELECTRIC,      100, 20, 100      ;NUZZLE
+	;move EFFECT_RECOIL_HIT,         90, ELECTRIC,       90, 15,   0      ;WILD_CHARGE
+	;move EFFECT_PARALYZE_HIT,       65, ELECTRIC,       95, 15,  10      ;THUNDER_FANG
+	;move EFFECT_SP_DEF_DOWN_HIT,    90, GRASS,         100, 10,  10      ;ENERGY_BALL
+	;move EFFECT_NORMAL_HIT,         90, GRASS,         100, 15,   0      ;LEAF_BLADE
+	;move EFFECT_NORMAL_HIT,         80, GRASS,         100, 15,   0      ;SEED_BOMB
+	;move EFFECT_MULTI_HIT,          25, GRASS,         100, 30,   0      ;BULLET_SEED
+	;move EFFECT_ALWAYS_HIT,         60, GRASS,         100, 20,   0      ;MAGICAL_LEAF
+	;move EFFECT_TRIPLE_KICK,        20, ICE,            90, 10,   0      ;TRIPLE_AXEL
+	;move EFFECT_FREEZE_DRY,         70, ICE,           100, 20,   0      ;FREEZE_DRY   ;;;;;;;
+	;move EFFECT_PAYBACK,            60, ICE,           100, 10,   0      ;AVALANCHE    ;;;;;;;
+	;move EFFECT_PRIORITY_HIT,       40, ICE,           100, 30,   0      ;ICE_SHARD
+	;move EFFECT_FREEZE_HIT,         65, ICE,            95, 15,  10      ;ICE_FANG
+	;move EFFECT_BRICK_BREAK,        75, FIGHTING,      100, 15,   0      ;BRICK_BREAK      ;;;;;;;;;
+	;move EFFECT_BULK_UP,             0, FIGHTING,      100, 20,   0      ;BULK_UP       ;;;;;;
+	;move EFFECT_ALWAYS_HIT,         80, FIGHTING,      100, 20,   0      ;AURA_SPHERE
+	;move EFFECT_LEECH_HIT,          75, FIGHTING,      100, 10,   0      ;DRAIN_PUNCH
+	;move EFFECT_CLOSE_COMBAT,      120, FIGHTING,      100,  5,   0      ;CLOSE_COMBAT  ;;;;;;;
+	;move EFFECT_SP_DEF_DOWN_HIT,   120, FIGHTING,       70,  5,  10      ;FOCUS_BLAST
+	;move EFFECT_POISON_HIT,         80, POISON,        100, 20,  30      ;POISON_JAB
+	;move EFFECT_POISON_HIT,         70, POISON,        100, 20,  10      ;CROSS_POISON
+	;move EFFECT_POISON_HIT,        120, POISON,         80,  5,  30      ;GUNK_SHOT
+	;move EFFECT_VENOSHOCK,          65, POISON,        100, 10,   0      ;VENOSHOCK    ;;;;;;;;;
+	;move EFFECT_SPEED_DOWN_HIT,     60, GROUND,        100, 20, 100      ;BULLDOZE
+	;move EFFECT_SP_DEF_DOWN_HIT,    90, GROUND,        100, 10,   0      ;EARTH_POWER
+	;move EFFECT_ACCURACY_DOWN_HIT,  65, GROUND,         85, 10,  30      ;MUD_BOMB
+	;move EFFECT_NORMAL_HIT,         80, GROUND,         95, 10,   0      ;DRILL_RUN
+	;move EFFECT_ALWAYS_HIT,         60, FLYING,        100, 20,   0      ;AERIAL_ACE
+	;move EFFECT_ACROBATICS,         55, FLYING,        100, 15,   0      ;ACROBATICS     ;;;;;
+	;move EFFECT_FLINCH_HIT,         75, FLYING,         95, 15,  30      ;AIR_SLASH
+	;move EFFECT_RECOIL_HIT,        120, FLYING,        100, 15,   0      ;BRAVE_BIRD
+	;move EFFECT_DOUBLE_HIT,         40, FLYING,         90, 10,   0      ;DUALWINGBEAT
+	;move EFFECT_CALM_MIND,           0, PSYCHIC,       100, 20,   0      ;CALM_MIND      ;;;;;;
+	;move EFFECT_COSMIC_POWER,        0, PSYCHIC,       100, 20,   0      ;COSMIC_POWER   ;;;;;
+	;move EFFECT_FLINCH_HIT,         80, PSYCHIC,        90, 15,  20      ;ZEN_HEADBUTT
+	;move EFFECT_FLINCH_HIT,         80, PSYCHIC,       100, 20,  10      ;EXTRASENSORY
+	;move EFFECT_NORMAL_HIT,         80, BUG,           100, 15,   0      ;X_SCISSOR
+	;move EFFECT_ATTACK_DOWN_HIT,    80, BUG,           100, 15, 100      ;LUNGE
+	;move EFFECT_PIVOT,              70, BUG,           100, 20,   0      ;U_TURN         ;;;;;;;;
+	;move EFFECT_SP_DEF_DOWN_HIT,    90, BUG,           100, 10,  10      ;BUG_BUZZ
+	;move EFFECT_CONFUSE_HIT,        75, BUG,           100, 15,  10      ;SIGNAL_BEAM
+	;move EFFECT_SPEED_DOWN_HIT,     60, ROCK,           95, 15, 100      ;ROCK_TOMB
+	;move EFFECT_NORMAL_HIT,         80, ROCK,          100, 20,   0      ;POWER_GEM
+	;move EFFECT_NORMAL_HIT,        100, ROCK,           80,  5,   0      ;STONE_EDGE
+	;move EFFECT_SPEED_UP_2,          0, ROCK,          100, 20,   0      ;ROCK_POLISH
+	;move EFFECT_NORMAL_HIT,         70, GHOST,         100, 15,   0      ;SHADOW_CLAW
+	;move EFFECT_PRIORITY_HIT,       40, GHOST,         100, 30,   0      ;SHADOW_SNEAK
+	;move EFFECT_HEX,                65, GHOST,         100, 10,   0      ;HEX
+	;move EFFECT_ALL_UP_HIT,         60, GHOST,         100,  5,   0      ;OMINOUS_WIND
+	;move EFFECT_FLY,                90, GHOST,         100, 10,   0      ;PHANTOM_FORCE
+	;move EFFECT_NORMAL_HIT,         80, DRAGON,        100, 15,   0      ;DRAGON_CLAW
+	;move EFFECT_NORMAL_HIT,         85, DRAGON,        100, 10,   0      ;DRAGON_PULSE
+	;move EFFECT_DRAGON_DANCE,        0, DRAGON,        100, 20,   0      ;DRAGON_DANCE    ;;;;;;;
+	;move EFFECT_OVERHEAT,          130, DRAGON,         90,  5,   0      ;DRACO_METEOR   ;;;;;;;;
+	;move EFFECT_FLINCH_HIT,         80, DARK,          100, 15,  20      ;DARK_PULSE
+	;move EFFECT_SP_ATK_UP_2,         0, DARK,          100, 20,   0      ;NASTY_PLOT
+	;move EFFECT_SP_ATK_DOWN_HIT,    55, DARK,           95, 15, 100      ;SNARL
+	;move EFFECT_NORMAL_HIT,         70, DARK,          100, 15,   0      ;NIGHT_SLASH
+	;move EFFECT_PAYBACK,            50, DARK,          100, 10,   0      ;PAYBACK
+	;move EFFECT_SP_DEF_DOWN_HIT,    80, STEEL,         100, 10,  10      ;FLASH_CANNON
+	;move EFFECT_DEFENSE_UP_2,        0, STEEL,         100, 15,   0      ;IRON_DEFENSE
+	;move EFFECT_ACCURACY_DOWN_HIT,  65, STEEL,          85, 10,  30      ;MIRROR_SHOT
+	;move EFFECT_FLINCH_HIT,         80, STEEL,         100, 15,  30      ;IRON_HEAD
 .IndirectEnd::

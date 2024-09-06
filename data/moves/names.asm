@@ -259,4 +259,5 @@ MoveNames::
 	li "BABYDOLLEYES"
 	li "DISARM VOICE"
 	li "SPIRIT BREAK"
+	li "STRANGESTEAM"
 	assert_list_length NUM_ATTACKS

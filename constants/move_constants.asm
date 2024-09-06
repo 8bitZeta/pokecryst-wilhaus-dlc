@@ -257,6 +257,7 @@
 	const ROCK_SMASH   ; f9
 	const WHIRLPOOL    ; fa
 	const BEAT_UP      ; fb
+	;; new moves start here
 	const DAZZLE_GLEAM ; fc
 	const FAIRY_WIND   ; fd
 	const MOONBLAST    ; fe
@@ -264,7 +265,8 @@
 	const DRAININGKISS ; 100
 	const BABYDOLLEYES ; 101
 	const DISARM_VOICE ; 102
-	const SPIRIT_BREAK ; 103	
+	const SPIRIT_BREAK ; 103
+	const STRANGESTEAM ; 104
 DEF NUM_ATTACKS EQU const_value - 1
 
 	if NUM_ATTACKS > $3fff

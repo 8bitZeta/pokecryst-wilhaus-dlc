@@ -287,6 +287,7 @@ BattleAnimations::
 	dw BattleAnim_BabyDollEyes
 	dw BattleAnim_DisarmVoice
 	dw BattleAnim_SpiritBreak
+	dw BattleAnim_StrangeSteam
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 
@@ -2652,6 +2653,7 @@ BattleAnim_SpiritBreak:
 BattleAnim_DisarmVoice:
 BattleAnim_BabyDollEyes:
 BattleAnim_DrainingKiss:
+BattleAnim_StrangeSteam:
 BattleAnim_TriAttack:
 	anim_3gfx BATTLE_ANIM_GFX_FIRE, BATTLE_ANIM_GFX_ICE, BATTLE_ANIM_GFX_LIGHTNING
 	anim_call BattleAnimSub_Fire

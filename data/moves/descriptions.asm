@@ -264,6 +264,7 @@ MoveDescriptions1:
 	dw BabyDollEyesDescription
 	dw DisarmVoiceDescription
 	dw SpiritBreakDescription
+	dw StrangeSteamDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1304,3 +1305,7 @@ DisarmVoiceDescription:
 SpiritBreakDescription:
 	db   "A strike that"
 	next "lowers ATTACK.@"
+
+StrangeSteamDescription:
+	db   "An odd fog that"
+	next "may confuse.@"
