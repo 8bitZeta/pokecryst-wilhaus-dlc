@@ -195,4 +195,5 @@ BattleCommandPointers:
 	dw BattleCommand_Facade
 	dw BattleCommand_Payback
 	dw BattleCommand_Refresh
+	dw BattleCommand_BrickBreak
 	assert_table_length NUM_EFFECT_COMMANDS
