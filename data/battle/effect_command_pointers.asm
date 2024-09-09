@@ -179,7 +179,20 @@ BattleCommandPointers:
 	dw BattleCommand_TriStatusChance
 	dw BattleCommand_SuperEffectiveLoopText
 	dw BattleCommand_StartLoop
-	dw BattleCommand_Curl
+	dw BattleCommand_Curl ;; new moves start next line
 	dw BattleCommand_Hex
 	dw BattleCommand_Venoshock
+	dw BattleCommand_Burn
+	dw BattleCommand_CloseCombat
+	dw BattleCommand_Overheat
+	dw BattleCommand_Acrobatics
+	dw BattleCommand_StartHail
+	dw BattleCommand_CalmMind
+	dw BattleCommand_DragonDance
+	dw BattleCommand_BulkUp
+	dw BattleCommand_CosmicPower
+	dw BattleCommand_FreezeDry
+	dw BattleCommand_Facade
+	dw BattleCommand_Payback
+	dw BattleCommand_Refresh
 	assert_table_length NUM_EFFECT_COMMANDS

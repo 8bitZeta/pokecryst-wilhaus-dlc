@@ -157,9 +157,25 @@ MoveEffectsPointers:
 	dw Teleport
 	dw BeatUp
 	dw Fly
-	dw DefenseCurl
+	dw DefenseCurl  ;;; new moves start next line
 	dw BabyDollEyes
 	dw DoBurn
 	dw Hex
 	dw Venoshock
+	dw CalmMind
+	dw CosmicPower
+	dw BulkUp
+	dw DragonDance
+	dw SpeedUpHit
+	dw Overheat
+	dw CloseCombat
+	dw FireFang
+	dw ThunderFang
+	dw IceFang
+	dw Acrobatics
+	dw Hail
+	dw FreezeDry
+	dw Payback
+	dw Facade
+	dw Refresh
 	assert_table_length NUM_MOVE_EFFECTS

@@ -255,7 +255,7 @@ MoveDescriptions1:
 	dw FutureSightDescription
 	dw RockSmashDescription
 	dw WhirlpoolDescription
-	dw BeatUpDescription
+	dw BeatUpDescription ;;;; new moves start next line
 	dw DazzleGleamDescription
 	dw FairyWindDescription
 	dw MoonblastDescription
@@ -265,6 +265,91 @@ MoveDescriptions1:
 	dw DisarmVoiceDescription
 	dw SpiritBreakDescription
 	dw StrangeSteamDescription
+	dw GigaImpactDescription
+	dw HyperVoiceDescription
+	dw FacadeDescription
+	dw RefreshDescription
+	dw BoomburstDescription
+	dw CovetDescription
+	dw FlareBlitzDescription
+	dw OverheatDescription
+	dw WillOWispDescription
+	dw MysticFireDescription
+	dw FlameChargeDescription
+	dw FireFangDescription
+	dw ScaldDescription
+	dw DiveDescription
+	dw AquaTailDescription
+	dw AquaJetDescription
+	dw WaterPulseDescription
+	dw LiquidationDescription
+	dw VoltTackleDescription
+	dw ChargeBeamDescription
+	dw NuzzleDescription
+	dw WildChargeDescription
+	dw ThunderFangDescription
+	dw EnergyBallDescription
+	dw LeafBladeDescription
+	dw SeedBombDescription
+	dw BulletSeedDescription
+	dw MagicalLeafDescription
+	dw AromatherapyDescription
+	dw HailDescription
+	dw TripleAxelDescription
+	dw FreezeDryDescription
+	dw AvalancheDescription
+	dw IceShardDescription
+	dw IceFangDescription
+	dw BrickBreakDescription
+	dw BulkUpDescription
+	dw AuraSphereDescription
+	dw DrainPunchDescription
+	dw CloseCombatDescription
+	dw FocusBlastDescription
+	dw PoisonJabDescription
+	dw CrossPoisonDescription
+	dw GunkShotDescription
+	dw VenoshockDescription
+	dw BulldozeDescription
+	dw EarthPowerDescription
+	dw MudBombDescription
+	dw DrillRunDescription
+	dw AerialAceDescription
+	dw AcrobaticsDescription
+	dw AirSlashDescription
+	dw BraveBirdDescription
+	dw DualWingBeatDescription
+	dw CalmMindDescription
+	dw CosmicPowerDescription
+	dw ZenHeadbuttDescription
+	dw ExtrasensoryDescription
+	dw XScissorDescription
+	dw LungeDescription
+	dw PounceDescription
+	dw BugBuzzDescription
+	dw SignalBeamDescription
+	dw RockTombDescription
+	dw PowerGemDescription
+	dw StoneEdgeDescription
+	dw RockPolishDescription
+	dw ShadowClawDescription
+	dw ShadowSneakDescription
+	dw HexDescription
+	dw OminousWindDescription
+	dw PhantomForceDescription
+	dw DragonClawDescription
+	dw DragonPulseDescription
+	dw DragonDanceDescription
+	dw DracoMeteorDescription
+	dw DarkPulseDescription
+	dw NastyPlotDescription
+	dw SnarlDescription
+	dw NightSlashDescription
+	dw PaybackDescription
+	dw FlashCannonDescription
+	dw IronDefenseDescription
+	dw MirrorShotDescription
+	dw IronHeadDescription
 .IndirectEnd::
 
 InvalidMoveDescription:
@@ -1274,6 +1359,8 @@ BeatUpDescription:
 	db   "Party #MON join"
 	next "in the attack.@"
 
+;; new moves start here
+
 DazzleGleamDescription:
 	db   "An attack that may"
 	next "reduce accuracy.@"
@@ -1304,8 +1391,348 @@ DisarmVoiceDescription:
 
 SpiritBreakDescription:
 	db   "A strike that"
-	next "lowers ATTACK.@"
+	next "lowers SPCL.ATK.@"
 
 StrangeSteamDescription:
 	db   "An odd fog that"
 	next "may confuse.@"
+
+GigaImpactDescription:
+	db   "1st turn: Attack"
+	next "2nd turn: Rest@"
+
+HyperVoiceDescription: 
+	db   "A loud shout"
+	next "that damages.@"
+
+FacadeDescription: 
+	db   "2x damage when"
+	next "BRN PRZ or PSN.@"
+
+RefreshDescription: 
+	db   "Heals user from"
+	next "BRN PRZ or PSN.@"
+
+BoomburstDescription: 
+	db   "An amazingly loud"
+	next "sound attack.@"
+
+CovetDescription:
+	db   "An attack that may"
+	next "steal a held item.@"
+
+FlareBlitzDescription: 
+	db   "A tackle that also"
+	next "hurts the user.@"
+
+OverheatDescription: 
+	db   "Strong but lowers"
+	next "user's SPCL. ATK.@"
+
+WillOWispDescription: 
+	db   "Eerie flare that"
+	next "burns target.@"
+
+MysticFireDescription: 
+	db   "An attack that"
+	next "lowers SPCL.ATK.@"
+
+FlameChargeDescription:
+	db   "An attack that may"
+	next "up user's SPEED.@"
+
+FireFangDescription: 
+	db   "A bite that can"
+	next "flinch and BURN.@"
+
+ScaldDescription: 
+	db   "Hot water that"
+	next "can BURN target.@"
+
+DiveDescription: 
+	db   "1st turn: Dive"
+	next "2nd turn: Attack@"
+
+AquaTailDescription: 
+	db   "Strikes with a"
+	next "watery tail.@"
+
+AquaJetDescription: 
+	db   "Lets the user get"
+	next "in the first hit.@"
+
+WaterPulseDescription: 
+	db   "Uneven water that"
+	next "may confuse foe.@"
+
+LiquidationDescription:
+	db   "An attack that may"
+	next "lower DEFENSE.@"
+
+VoltTackleDescription: 
+	db   "Can PRZ target,"
+	next "but hurts user.@"
+
+ChargeBeamDescription: 
+	db   "Attack that may"
+	next "raise SPEC.ATK.@"
+
+NuzzleDescription: 
+	db   "A cuddle that will"
+	next "always PRZ target.@"
+
+WildChargeDescription: 
+	db   "A tackle that also"
+	next "hurts the user.@"
+
+ThunderFangDescription: 
+	db   "A bite that can"
+	next "flinch and PRZ.@"
+
+EnergyBallDescription: 
+	db   "An attack that may"
+	next "lower SPCL.ATK.@"
+
+LeafBladeDescription: 
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
+
+SeedBombDescription: 
+	db   "Attacks with a"
+	next "bursting seed.@"
+
+BulletSeedDescription: 
+	db   "Repeatedly strikes"
+	next "2-5 times.@"
+
+MagicalLeafDescription: 
+	db   "An attack that"
+	next "never misses.@"
+
+AromatherapyDescription:
+	db   "Eliminates all"
+	next "status problems.@"
+
+HailDescription:
+	db   "Inflicts damage"
+	next "every turn.@"
+
+TripleAxelDescription: 
+	db   "Hits three times"
+	next "with rising power.@"
+
+FreezeDryDescription: 
+	db   "Super effective on"
+	next "water types also.@"
+
+AvalancheDescription: 
+	db   "2x damage if"
+	next "already attacked.@"
+
+IceShardDescription: 
+	db   "Lets the user get"
+	next "in the first hit.@"
+
+IceFangDescription: 
+	db   "A bite that can"
+	next "flinch or FRZ.@"
+
+BrickBreakDescription: 
+	db   "Breaks Reflect and"
+	next "Light Screen.@"
+
+BulkUpDescription: 
+	db   "Raises ATK and"
+	next "DEF at once.@"
+
+AuraSphereDescription: 
+	db   "An attack that"
+	next "never misses.@"
+
+DrainPunchDescription: 
+	db   "Steals 1/2 of the"
+	next "damage inflicted.@"
+
+CloseCombatDescription: 
+	db   "Strong but lowers"
+	next "users defenses."
+
+FocusBlastDescription: 
+	db   "An attack that may"
+	next "lower SPCL.ATK.@"
+
+PoisonJabDescription: 
+	db   "A strike with a"
+	next "chance to PSN.@"
+
+CrossPoisonDescription: 
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
+
+GunkShotDescription: 
+	db   "A gross blog with"
+	next "a chance to PSN.@"
+
+VenoshockDescription: 
+	db   "Deals 2x damage"
+	next "if target is PSN.@"
+
+BulldozeDescription: 
+	db   "An attack that"
+	next "lowers SPEED.@"
+
+EarthPowerDescription: 
+	db   "An attack that may"
+	next "lower SPCL.ATK.@"
+
+MudBombDescription: 
+	db   "An attack that may"
+	next "reduce accuracy.@"
+
+DrillRunDescription: 
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
+
+AerialAceDescription: 
+	db   "An attack that"
+	next "never misses.@"
+
+AcrobaticsDescription: 
+	db   "Does more damage"
+	next "with no item.@"
+
+AirSlashDescription: 
+	db   "An attack that may"
+	next "cause flinching.@"
+
+BraveBirdDescription: 
+	db   "A tackle that also"
+	next "hurts the user.@"
+
+DualWingBeatDescription: 
+	db   "An attack that"
+	next "uses both wings.@"
+
+CalmMindDescription: 
+	db   "Raises SPCL.ATK"
+	next "and SPCL.DEF.@"
+
+CosmicPowerDescription: 
+	db   "Raises DEF and"
+	next "SPCL.DEF.@"
+
+ZenHeadbuttDescription: 
+	db   "An attack that may"
+	next "cause flinching.@"
+
+ExtrasensoryDescription: 
+	db   "An attack that may"
+	next "cause flinching.@"
+
+XScissorDescription: 
+	db   "Slashes in an"
+	next "X formation.@"
+
+LungeDescription: 
+	db   "A strike that"
+	next "lowers ATTACK.@"
+
+PounceDescription: 
+	db   "Attack that will"
+	next "lower foe's speed.@"
+
+BugBuzzDescription: 
+	db   "An attack that may"
+	next "lower SPCL.ATK.@"
+
+SignalBeamDescription: 
+	db   "A weird light that"
+	next "may confuse.@"
+
+RockTombDescription: 
+	db   "Boulders that"
+	next "lower foe's speed.@"
+
+PowerGemDescription: 
+	db   "Crystals shine and"
+	next "deal damage."
+
+StoneEdgeDescription: 
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
+
+RockPolishDescription: 
+	db   "Sharply raises"
+	next "user's speed.@"
+
+ShadowClawDescription: 
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
+
+ShadowSneakDescription: 
+	db   "Lets the user get"
+	next "in the first hit.@"
+
+HexDescription: 
+	db   "Deals 2x damage if"
+	next "foe has status.@"
+
+OminousWindDescription: 
+	db   "An attack that may"
+	next "raise all stats.@"
+
+PhantomForceDescription: 
+	db   "1st turn: Vanish"
+	next "2nd turn: Attack@"
+
+DragonClawDescription: 
+	db   "Strike with a"
+	next "viscious rend.@"
+
+DragonPulseDescription: 
+	db   "Strike with a"
+	next "draconic aura.@"
+
+DragonDanceDescription: 
+	db   "Raises users ATK"
+	next "and SPEED.@"
+
+DracoMeteorDescription: 
+	db   "Strong but lowers"
+	next "user's SPCL.ATK.@"
+
+DarkPulseDescription: 
+	db   "An attack that may"
+	next "cause flinching.@"
+
+NastyPlotDescription: 
+	db   "Sharply raises"
+	next "user's SPCL.ATK.@"
+
+SnarlDescription: 
+	db   "An attack that may"
+	next "lower SPCL.ATK.@"
+
+NightSlashDescription: 
+	db   "Has a high criti-"
+	next "cal hit ratio.@"
+
+PaybackDescription: 
+	db   "2x damage if"
+	next "already attacked.@"
+
+FlashCannonDescription: 
+	db   "An attack that may"
+	next "lower SPCL.ATK.@"
+
+IronDefenseDescription: 
+	db   "Sharply raises"
+	next "user's DEFENSE.@"
+
+MirrorShotDescription: 
+	db   "An attack that may"
+	next "reduce accuracy.@"
+
+IronHeadDescription: 
+	db   "An attack that may"
+	next "cause flinching.@"

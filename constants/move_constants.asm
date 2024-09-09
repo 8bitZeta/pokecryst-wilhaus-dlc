@@ -258,15 +258,99 @@
 	const WHIRLPOOL    ; fa
 	const BEAT_UP      ; fb
 	;; new moves start here
-	const DAZZLE_GLEAM ; fc
-	const FAIRY_WIND   ; fd
-	const MOONBLAST    ; fe
-	const PLAY_ROUGH   ; ff
-	const DRAININGKISS ; 100
-	const BABYDOLLEYES ; 101
-	const DISARM_VOICE ; 102
-	const SPIRIT_BREAK ; 103
-	const STRANGESTEAM ; 104
+	const DAZZLE_GLEAM ; fc  
+	const FAIRY_WIND   ; fd  
+	const MOONBLAST    ; fe  
+	const PLAY_ROUGH   ; ff  
+	const DRAININGKISS ; 100 
+	const BABYDOLLEYES ; 101 
+	const DISARM_VOICE ; 102 
+	const SPIRIT_BREAK ; 103 
+	const STRANGESTEAM ; 104 
+	const GIGA_IMPACT  ; 105 
+	const HYPER_VOICE  ; 106 
+	const FACADE       ; 107 
+	const REFRESH      ; 108 
+	const BOOMBURST    ; 109 
+	const COVET        ; 10a 
+	const FLARE_BLITZ  ; 10b 
+	const OVERHEAT     ; 10c 
+	const WILL_O_WISP  ; 10d 
+	const MYSTIC_FIRE  ; 10e 
+	const FLAME_CHARGE ; 10f 
+	const FIRE_FANG    ; 110 
+	const SCALD        ; 111 
+	const DIVE         ; 112 
+	const AQUA_TAIL    ; 113 
+	const AQUA_JET     ; 114 
+	const WATER_PULSE  ; 115 
+	const LIQUIDATION  ; 116 
+	const VOLT_TACKLE  ; 117 
+	const CHARGE_BEAM  ; 118 
+	const NUZZLE       ; 119 
+	const WILD_CHARGE  ; 11a 
+	const THUNDER_FANG ; 11b 
+	const ENERGY_BALL  ; 11c 
+	const LEAF_BLADE   ; 11d 
+	const SEED_BOMB    ; 11e 
+	const BULLET_SEED  ; 11f 
+	const MAGICAL_LEAF ; 120 
+	const AROMATHERAPY ; 121 
+	const HAIL         ; 122 
+	const TRIPLE_AXEL  ; 123 
+	const FREEZE_DRY   ; 124 
+	const AVALANCHE    ; 125 
+	const ICE_SHARD    ; 126 
+	const ICE_FANG     ; 127 
+	const BRICK_BREAK  ; 128 
+	const BULK_UP      ; 129 
+	const AURA_SPHERE  ; 12a 
+	const DRAIN_PUNCH  ; 12b 
+	const CLOSE_COMBAT ; 12c 
+	const FOCUS_BLAST  ; 12d 
+	const POISON_JAB   ; 12e 
+	const CROSS_POISON ; 12f 
+	const GUNK_SHOT    ; 130 
+	const VENOSHOCK    ; 131 
+	const BULLDOZE     ; 132 
+	const EARTH_POWER  ; 133 
+	const MUD_BOMB     ; 134 
+	const DRILL_RUN    ; 135 
+	const AERIAL_ACE   ; 136 
+	const ACROBATICS   ; 137 
+	const AIR_SLASH    ; 138 
+	const BRAVE_BIRD   ; 139 
+	const DUALWINGBEAT ; 13a 
+	const CALM_MIND    ; 13b 
+	const COSMIC_POWER ; 13c 
+	const ZEN_HEADBUTT ; 13d 
+	const EXTRASENSORY ; 13e 
+	const X_SCISSOR    ; 13f 
+	const LUNGE        ; 140 
+	const POUNCE       ; 141 
+	const BUG_BUZZ     ; 142 
+	const SIGNAL_BEAM  ; 143 
+	const ROCK_TOMB    ; 144 
+	const POWER_GEM    ; 145 
+	const STONE_EDGE   ; 146 
+	const ROCK_POLISH  ; 147 
+	const SHADOW_CLAW  ; 148 
+	const HEX          ; 149 
+	const OMINOUS_WIND ; 14a 
+	const PHANTOMFORCE ; 14b 
+	const DRAGON_CLAW  ; 14c 
+	const DRAGON_PULSE ; 14d 
+	const DRAGON_DANCE ; 14e 
+	const DRACO_METEOR ; 14f 
+	const DARK_PULSE   ; 150 
+	const NASTY_PLOT   ; 151 
+	const SNARL        ; 152 
+	const NIGHT_SLASH  ; 153 
+	const PAYBACK      ; 154 
+	const FLASH_CANNON ; 155 
+	const IRON_DEFENSE ; 156 
+	const MIRROR_SHOT  ; 157 
+	const IRON_HEAD    ; 158 
 DEF NUM_ATTACKS EQU const_value - 1
 
 	if NUM_ATTACKS > $3fff
@@ -274,7 +358,7 @@ DEF NUM_ATTACKS EQU const_value - 1
 	endc
 
 ; Battle animations use the same constants as the moves
-	const ANIM_SWEET_SCENT_2     ; fc
+	const ANIM_SWEET_SCENT_2     ; last move +1
 ; Animations with negative IDs will play even when animations are disabled
 	const_def -1, -1
 	const ANIM_HIT_CONFUSION     ;  -1 (ffff)
@@ -300,6 +384,7 @@ DEF NUM_ATTACKS EQU const_value - 1
 	const ANIM_RETURN_MON        ; -14 (ffec)
 	const ANIM_SEND_OUT_MON      ; -15 (ffeb)
 	const ANIM_THROW_POKE_BALL   ; -16 (ffea)
+	const ANIM_IN_HAIL           ; -17 (ffdf)
 DEF NUM_BATTLE_ANIMS EQU -const_value - 1
 
 ; wNumHits uses offsets from ANIM_MISS

@@ -24,6 +24,7 @@
 	dw BattleAnim_Wobble
 	dw BattleAnim_Shake
 	dw BattleAnim_HitConfusion
+	dw BattleAnim_InHail
 	assert_table_length NUM_BATTLE_ANIMS
 BattleAnimations::
 	table_width 2, BattleAnimations
@@ -278,7 +279,7 @@ BattleAnimations::
 	dw BattleAnim_FutureSight
 	dw BattleAnim_RockSmash
 	dw BattleAnim_Whirlpool
-	dw BattleAnim_BeatUp
+	dw BattleAnim_BeatUp;;;;;;; new attacks start next line
 	dw BattleAnim_DazzleGleam
 	dw BattleAnim_FairyWind
 	dw BattleAnim_Moonblast
@@ -288,6 +289,91 @@ BattleAnimations::
 	dw BattleAnim_DisarmVoice
 	dw BattleAnim_SpiritBreak
 	dw BattleAnim_StrangeSteam
+	dw BattleAnim_GigaImpact
+	dw BattleAnim_HyperVoice
+	dw BattleAnim_Facade
+	dw BattleAnim_Refresh
+	dw BattleAnim_Boomburst
+	dw BattleAnim_Covet
+	dw BattleAnim_FlareBlitz
+	dw BattleAnim_Overheat
+	dw BattleAnim_WillOWisp
+	dw BattleAnim_MysticFire
+	dw BattleAnim_FlameCharge
+	dw BattleAnim_FireFang
+	dw BattleAnim_Scald
+	dw BattleAnim_Dive
+	dw BattleAnim_AquaTail
+	dw BattleAnim_AquaJet
+	dw BattleAnim_WaterPulse
+	dw BattleAnim_Liquidation
+	dw BattleAnim_VoltTackle
+	dw BattleAnim_ChargeBeam
+	dw BattleAnim_Nuzzle
+	dw BattleAnim_WildCharge
+	dw BattleAnim_ThunderFang
+	dw BattleAnim_EnergyBall
+	dw BattleAnim_LeafBlade
+	dw BattleAnim_SeedBomb
+	dw BattleAnim_BulletSeed
+	dw BattleAnim_MagicalLeaf
+	dw BattleAnim_Aromatherapy
+	dw BattleAnim_Hail
+	dw BattleAnim_TripleAxel
+	dw BattleAnim_FreezeDry
+	dw BattleAnim_Avalanche
+	dw BattleAnim_IceShard
+	dw BattleAnim_IceFang
+	dw BattleAnim_BrickBreak
+	dw BattleAnim_BulkUp
+	dw BattleAnim_AuraSphere
+	dw BattleAnim_DrainPunch
+	dw BattleAnim_CloseCombat
+	dw BattleAnim_FocusBlast
+	dw BattleAnim_PoisonJab
+	dw BattleAnim_CrossPoison
+	dw BattleAnim_GunkShot
+	dw BattleAnim_Venoshock
+	dw BattleAnim_Bulldoze
+	dw BattleAnim_EarthPower
+	dw BattleAnim_MudBomb
+	dw BattleAnim_DrillRun
+	dw BattleAnim_AerialAce
+	dw BattleAnim_Acrobatics
+	dw BattleAnim_AirSlash
+	dw BattleAnim_BraveBird
+	dw BattleAnim_DualWingBeat
+	dw BattleAnim_CalmMind
+	dw BattleAnim_CosmicPower
+	dw BattleAnim_ZenHeadbutt
+	dw BattleAnim_Extrasensory
+	dw BattleAnim_XScissor
+	dw BattleAnim_Lunge
+	dw BattleAnim_Pounce
+	dw BattleAnim_BugBuzz
+	dw BattleAnim_SignalBeam
+	dw BattleAnim_RockTomb
+	dw BattleAnim_PowerGem
+	dw BattleAnim_StoneEdge
+	dw BattleAnim_RockPolish
+	dw BattleAnim_ShadowClaw
+	dw BattleAnim_ShadowSneak
+	dw BattleAnim_Hex
+	dw BattleAnim_OminousWind
+	dw BattleAnim_PhantomForce
+	dw BattleAnim_DragonClaw
+	dw BattleAnim_DragonPulse
+	dw BattleAnim_DragonDance
+	dw BattleAnim_DracoMeteor
+	dw BattleAnim_DarkPulse
+	dw BattleAnim_NastyPlot
+	dw BattleAnim_Snarl
+	dw BattleAnim_NightSlash
+	dw BattleAnim_Payback
+	dw BattleAnim_FlashCannon
+	dw BattleAnim_IronDefense
+	dw BattleAnim_MirrorShot
+	dw BattleAnim_IronHead
 	assert_table_length NUM_ATTACKS + 1
 	dw BattleAnim_SweetScent2
 
@@ -2646,14 +2732,98 @@ BattleAnim_Lick:
 	anim_ret
 
 BattleAnim_DazzleGleam:
-BattleAnim_PlayRough:
-BattleAnim_Moonblast:
 BattleAnim_FairyWind:
-BattleAnim_SpiritBreak:
-BattleAnim_DisarmVoice:
-BattleAnim_BabyDollEyes:
+BattleAnim_Moonblast:
+BattleAnim_PlayRough:
 BattleAnim_DrainingKiss:
+BattleAnim_BabyDollEyes:
+BattleAnim_DisarmVoice:
+BattleAnim_SpiritBreak:
 BattleAnim_StrangeSteam:
+BattleAnim_GigaImpact:
+BattleAnim_HyperVoice:
+BattleAnim_Facade:
+BattleAnim_Refresh:
+BattleAnim_Boomburst:
+BattleAnim_Covet:
+BattleAnim_FlareBlitz:
+BattleAnim_Overheat:
+BattleAnim_WillOWisp:
+BattleAnim_MysticFire:
+BattleAnim_FlameCharge:
+BattleAnim_FireFang:
+BattleAnim_Scald:
+BattleAnim_Dive:
+BattleAnim_AquaTail:
+BattleAnim_AquaJet:
+BattleAnim_WaterPulse:
+BattleAnim_Liquidation:
+BattleAnim_VoltTackle:
+BattleAnim_ChargeBeam:
+BattleAnim_Nuzzle:
+BattleAnim_WildCharge:
+BattleAnim_ThunderFang:
+BattleAnim_EnergyBall:
+BattleAnim_LeafBlade:
+BattleAnim_SeedBomb:
+BattleAnim_BulletSeed:
+BattleAnim_MagicalLeaf:
+BattleAnim_Aromatherapy:
+BattleAnim_TripleAxel:
+BattleAnim_FreezeDry:
+BattleAnim_Avalanche:
+BattleAnim_IceShard:
+BattleAnim_IceFang:
+BattleAnim_BrickBreak:
+BattleAnim_BulkUp:
+BattleAnim_AuraSphere:
+BattleAnim_DrainPunch:
+BattleAnim_CloseCombat:
+BattleAnim_FocusBlast:
+BattleAnim_PoisonJab:
+BattleAnim_CrossPoison:
+BattleAnim_GunkShot:
+BattleAnim_Venoshock:
+BattleAnim_Bulldoze:
+BattleAnim_EarthPower:
+BattleAnim_MudBomb:
+BattleAnim_DrillRun:
+BattleAnim_AerialAce:
+BattleAnim_Acrobatics:
+BattleAnim_AirSlash:
+BattleAnim_BraveBird:
+BattleAnim_DualWingBeat:
+BattleAnim_CalmMind:
+BattleAnim_CosmicPower:
+BattleAnim_ZenHeadbutt:
+BattleAnim_Extrasensory:
+BattleAnim_XScissor:
+BattleAnim_Lunge:
+BattleAnim_Pounce:
+BattleAnim_BugBuzz:
+BattleAnim_SignalBeam:
+BattleAnim_RockTomb:
+BattleAnim_PowerGem:
+BattleAnim_StoneEdge:
+BattleAnim_RockPolish:
+BattleAnim_ShadowClaw:
+BattleAnim_ShadowSneak:
+BattleAnim_Hex:
+BattleAnim_OminousWind:
+BattleAnim_PhantomForce:
+BattleAnim_DragonClaw:
+BattleAnim_DragonPulse:
+BattleAnim_DragonDance:
+BattleAnim_DracoMeteor:
+BattleAnim_DarkPulse:
+BattleAnim_NastyPlot:
+BattleAnim_Snarl:
+BattleAnim_NightSlash:
+BattleAnim_Payback:
+BattleAnim_FlashCannon:
+BattleAnim_IronDefense:
+BattleAnim_MirrorShot:
+BattleAnim_IronHead:
 BattleAnim_TriAttack:
 	anim_3gfx BATTLE_ANIM_GFX_FIRE, BATTLE_ANIM_GFX_ICE, BATTLE_ANIM_GFX_LIGHTNING
 	anim_call BattleAnimSub_Fire
@@ -4611,6 +4781,23 @@ BattleAnim_BeatUp:
 	anim_wait 8
 	anim_call BattleAnim_ShowMon_0
 	anim_ret
+
+BattleAnim_InHail:
+BattleAnim_Hail:
+	anim_1gfx ANIM_GFX_ICE
+	anim_bgeffect ANIM_BG_WHITE_HUES, $0, $8, $0
+	anim_obj ANIM_OBJ_HAIL, 88, 0, $0
+	anim_wait 8
+	anim_obj ANIM_OBJ_HAIL, 72, 0, $1
+	anim_wait 8
+	anim_obj ANIM_OBJ_HAIL, 56, 0, $2
+.loop
+	anim_sound 0, 1, SFX_SHINE
+	anim_wait 8
+	anim_loop 8, .loop
+	anim_wait 8
+	anim_ret
+
 
 BattleAnimSub_Drain:
 	anim_obj BATTLE_ANIM_OBJ_DRAIN, 132, 44, $0

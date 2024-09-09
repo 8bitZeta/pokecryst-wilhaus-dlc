@@ -1615,6 +1615,9 @@ BattleCommand_CheckHit:
 	call .ThunderRain
 	ret z
 
+	call .BlizzardHail
+	ret z
+
 	call .XAccuracy
 	ret nz
 
@@ -1790,6 +1793,18 @@ BattleCommand_CheckHit:
 	ld a, [wBattleWeather]
 	cp WEATHER_RAIN
 	ret
+
+.BlizzardHail:
+; Return z if the current move always hits in hail, and it is hailing.
+	ld a, BATTLE_VARS_MOVE_EFFECT
+	call GetBattleVar
+	cp EFFECT_BLIZZARD
+	ret nz
+
+	ld a, [wBattleWeather]
+	cp WEATHER_HAIL
+	ret
+
 
 .XAccuracy:
 	ld a, BATTLE_VARS_SUBSTATUS4
@@ -5307,15 +5322,8 @@ BattleCommand_EndLoop:
 	jr z, .beat_up
 	cp EFFECT_TRIPLE_KICK
 	jr nz, .not_triple_kick
-.reject_triple_kick_sample
-	call BattleRandom
-	and $3
-	jr z, .reject_triple_kick_sample
-	dec a
-	jr nz, .double_hit
-	ld a, 1
-	ld [bc], a
-	jr .done_loop
+	ld a, 2
+	jr .double_hit
 
 .beat_up
 	ldh a, [hBattleTurn]
@@ -5915,6 +5923,68 @@ BattleCommand_Confuse_CheckSnore_Swagger_ConfuseHit:
 	ret z
 	jp PrintDidntAffect2
 
+BattleCommand_Burn:
+; burn
+
+	ld a, BATTLE_VARS_STATUS_OPP
+	call GetBattleVar
+	bit BRN, a
+	jr nz, .burned
+	ld a, [wTypeModifier]
+	and $7f
+	jr z, .didnt_affect
+	ld c, FIRE
+	call CheckIfTargetIsSpecificType
+	ret z
+	call GetOpponentItem
+	ld a, b
+	cp HELD_PREVENT_BURN
+	jr nz, .no_item_protection
+	ld a, [hl]
+	ld [wNamedObjectIndexBuffer], a
+	call GetItemName
+	call AnimateFailedMove
+	ld hl, ProtectedByText
+	jp StdBattleTextBox
+
+.no_item_protection
+	ld a, BATTLE_VARS_STATUS_OPP
+	call GetBattleVarAddr
+	and a
+	jr nz, .failed
+	ld a, [wAttackMissed]
+	and a
+	jr nz, .failed
+	call CheckSubstituteOpp
+	jr nz, .failed
+	ld c, 30
+	call DelayFrames
+	call AnimateCurrentMove
+	ld a, $1
+	ldh [hBGMapMode], a
+	ld a, BATTLE_VARS_STATUS_OPP
+	call GetBattleVarAddr
+	set BRN, [hl]
+	call UpdateOpponentInParty
+	ld hl, ApplyBrnEffectOnAttack
+	call CallBattleCore
+	call UpdateBattleHuds
+	call PrintBurn
+	ld hl, UseHeldStatusHealingItem
+	jp CallBattleCore
+
+.burned
+	call AnimateFailedMove
+	ld hl, AlreadyBurnedText
+	jp StdBattleTextBox
+
+.failed
+	jp PrintDidntAffect2
+
+.didnt_affect
+	call AnimateFailedMove
+	jp PrintDoesntAffect
+
 BattleCommand_Paralyze:
 	ld a, BATTLE_VARS_STATUS_OPP
 	call GetBattleVar
@@ -6046,9 +6116,6 @@ EndRechargeOpp:
 
 INCLUDE "engine/battle/move_effects/rage.asm"
 
-INCLUDE "engine/battle/move_effects/hex.asm"
-
-INCLUDE "engine/battle/move_effects/venoshock.asm"
 
 BattleCommand_DoubleFlyingDamage:
 	ld a, BATTLE_VARS_SUBSTATUS3_OPP
@@ -6497,100 +6564,6 @@ INCLUDE "engine/battle/move_effects/baton_pass.asm"
 INCLUDE "engine/battle/move_effects/pursuit.asm"
 
 INCLUDE "engine/battle/move_effects/rapid_spin.asm"
-
-BattleCommand_HealMorn:
-	ld b, MORN_F
-	jr BattleCommand_TimeBasedHealContinue
-
-BattleCommand_HealDay:
-	ld b, DAY_F
-	jr BattleCommand_TimeBasedHealContinue
-
-BattleCommand_HealNite:
-	ld b, NITE_F
-	; fallthrough
-
-BattleCommand_TimeBasedHealContinue:
-; Time- and weather-sensitive heal.
-
-	ld hl, wBattleMonMaxHP
-	ld de, wBattleMonHP
-	ldh a, [hBattleTurn]
-	and a
-	jr z, .start
-	ld hl, wEnemyMonMaxHP
-	ld de, wEnemyMonHP
-
-.start
-; Index for .Multipliers
-; Default restores half max HP.
-	ld c, 2
-
-; Don't bother healing if HP is already full.
-	push bc
-	call CompareBytes
-	pop bc
-	jr z, .Full
-
-; Don't factor in time of day in link battles.
-	ld a, [wLinkMode]
-	and a
-	jr nz, .Weather
-
-	ld a, [wTimeOfDay]
-	cp b
-	jr z, .Weather
-	dec c ; double
-
-.Weather:
-	ld a, [wBattleWeather]
-	and a
-	jr z, .Heal
-
-; x2 in sun
-; /2 in rain/sandstorm
-	inc c
-	cp WEATHER_SUN
-	jr z, .Heal
-	dec c
-	dec c
-
-.Heal:
-	ld b, 0
-	ld hl, .Multipliers
-	add hl, bc
-	add hl, bc
-
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
-	ld a, BANK(GetMaxHP)
-	rst FarCall
-
-	call AnimateCurrentMove
-	call BattleCommand_SwitchTurn
-
-	callfar RestoreHP
-
-	call BattleCommand_SwitchTurn
-	call UpdateUserInParty
-
-; 'regained health!'
-	ld hl, RegainedHealthText
-	jp StdBattleTextbox
-
-.Full:
-	call AnimateFailedMove
-
-; 'hp is full!'
-	ld hl, HPIsFullText
-	jp StdBattleTextbox
-
-.Multipliers:
-	dw GetEighthMaxHP
-	dw GetQuarterMaxHP
-	dw GetHalfMaxHP
-	dw GetMaxHP
 
 INCLUDE "engine/battle/move_effects/hidden_power.asm"
 

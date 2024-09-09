@@ -182,6 +182,19 @@ ENDM
 	command curl                    ; af
 	command hex                     ; b0
 	command venoshock               ; b1
+	command burn                    ; b2
+	command closecombat             ; b3
+	command overheat                ; b4
+	command acrobatics              ; b5
+	command calmmind                ; b6
+	command dragondance             ; b7
+	command bulkup                  ; b8
+	command cosmicpower             ; b9
+	command starthail               ; ba
+	command freezedry               ; bb
+	command refresh                 ; bc
+	command facade                  ; bd
+	command payback                 ; be
 DEF NUM_EFFECT_COMMANDS EQU const_value - 1
 
 	const_def -1, -1
