@@ -335,22 +335,23 @@
 	const STONE_EDGE   ; 146 
 	const ROCK_POLISH  ; 147 
 	const SHADOW_CLAW  ; 148 
-	const HEX          ; 149 
-	const OMINOUS_WIND ; 14a 
-	const PHANTOMFORCE ; 14b 
-	const DRAGON_CLAW  ; 14c 
-	const DRAGON_PULSE ; 14d 
-	const DRAGON_DANCE ; 14e 
-	const DRACO_METEOR ; 14f 
-	const DARK_PULSE   ; 150 
-	const NASTY_PLOT   ; 151 
-	const SNARL        ; 152 
-	const NIGHT_SLASH  ; 153 
-	const PAYBACK      ; 154 
-	const FLASH_CANNON ; 155 
-	const IRON_DEFENSE ; 156 
-	const MIRROR_SHOT  ; 157 
-	const IRON_HEAD    ; 158 
+	const SHADOW_SNEAK ; 149 
+	const HEX          ; 14a 
+	const OMINOUS_WIND ; 14b 
+	const PHANTOMFORCE ; 14c 
+	const DRAGON_CLAW  ; 14d 
+	const DRAGON_PULSE ; 14e 
+	const DRAGON_DANCE ; 14f 
+	const DRACO_METEOR ; 150 
+	const DARK_PULSE   ; 151 
+	const NASTY_PLOT   ; 152 
+	const SNARL        ; 153 
+	const NIGHT_SLASH  ; 154 
+	const PAYBACK      ; 155 
+	const FLASH_CANNON ; 156 
+	const IRON_DEFENSE ; 157 
+	const MIRROR_SHOT  ; 158 
+	const IRON_HEAD    ; 159
 DEF NUM_ATTACKS EQU const_value - 1
 
 	if NUM_ATTACKS > $3fff

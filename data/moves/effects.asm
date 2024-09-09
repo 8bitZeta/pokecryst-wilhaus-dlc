@@ -2432,6 +2432,28 @@ FreezeDry:
 	freezetarget
 	endmove
 
+BrickBreak:
+	checkobedience
+	usedmovetext
+	doturn
+	critical
+	resettypematchup
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	checkhit
+	moveanim
+	failuretext
+	brickbreak
+	applydamage
+	criticaltext
+	supereffectivetext
+	checkfaint
+	buildopponentrage
+	kingsrock
+	endmove
+
 Payback:
 	checkobedience
 	usedmovetext

@@ -159,22 +159,27 @@ MoveEffectsPointers:
 	dw Fly
 	dw DefenseCurl  ;;; new moves start next line
 	dw BabyDollEyes
-	dw DoBurn
 	dw Hex
 	dw Venoshock
+	dw DoBurn
 	dw CalmMind
 	dw CosmicPower
 	dw BulkUp
 	dw DragonDance
 	dw SpeedUpHit
-	dw Overheat
+	dw SpecialAttackUpHit
+	dw FlareBlitz
+	dw VoltTackle
 	dw CloseCombat
+	dw Overheat
 	dw FireFang
 	dw ThunderFang
 	dw IceFang
 	dw Acrobatics
+	dw FreezeHit    ;; blizzard
 	dw Hail
 	dw FreezeDry
+	dw BrickBreak
 	dw Payback
 	dw Facade
 	dw Refresh

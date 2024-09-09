@@ -2,7 +2,7 @@ BattleCommand_Refresh:
 ; cure user of poison, paralysis, or a burn
 	ld a, BATTLE_VARS_STATUS
 	call GetBattleVar
-	and SLP
+	and SLP_MASK
 	jr nz, .failed
 
 	ld de, wPartyMon1Status

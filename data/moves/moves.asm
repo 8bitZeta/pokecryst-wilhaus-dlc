@@ -294,7 +294,7 @@ Moves1:
 	move EFFECT_BURN_HIT,           80, WATER,         100, 15,  20      ;SCALD
 	move EFFECT_FLY,                80, WATER,         100, 10,   0      ;DIVE
 	move EFFECT_NORMAL_HIT,         90, WATER,          90, 10,   0      ;AQUA_TAIL
-	move EFFECT_PRIOIRTY_HIT,       40, WATER,         100, 20,   0      ;AQUA_JET
+	move EFFECT_PRIORITY_HIT,       40, WATER,         100, 20,   0      ;AQUA_JET
 	move EFFECT_CONFUSE_HIT,        60, WATER,         100, 20,  20      ;WATER_PULSE
 	move EFFECT_DEFENSE_DOWN_HIT,   85, WATER,         100, 10,  20      ;LIQUIDATION
 	move EFFECT_VOLT_TACKLE,       120, ELECTRIC,      100, 15,  10      ;VOLT_TACKLE
@@ -333,10 +333,10 @@ Moves1:
 	move EFFECT_FLINCH_HIT,         75, FLYING,         95, 15,  30      ;AIR_SLASH
 	move EFFECT_RECOIL_HIT,        120, FLYING,        100, 15,   0      ;BRAVE_BIRD
 	move EFFECT_DOUBLE_HIT,         40, FLYING,         90, 10,   0      ;DUALWINGBEAT
-	move EFFECT_CALM_MIND,           0, PSYCHIC,       100, 20,   0      ;CALM_MIND
-	move EFFECT_COSMIC_POWER,        0, PSYCHIC,       100, 20,   0      ;COSMIC_POWER
-	move EFFECT_FLINCH_HIT,         80, PSYCHIC,        90, 15,  20      ;ZEN_HEADBUTT
-	move EFFECT_FLINCH_HIT,         80, PSYCHIC,       100, 20,  10      ;EXTRASENSORY
+	move EFFECT_CALM_MIND,           0, PSYCHIC_TYPE,  100, 20,   0      ;CALM_MIND
+	move EFFECT_COSMIC_POWER,        0, PSYCHIC_TYPE,  100, 20,   0      ;COSMIC_POWER
+	move EFFECT_FLINCH_HIT,         80, PSYCHIC_TYPE,   90, 15,  20      ;ZEN_HEADBUTT
+	move EFFECT_FLINCH_HIT,         80, PSYCHIC_TYPE,  100, 20,  10      ;EXTRASENSORY
 	move EFFECT_NORMAL_HIT,         80, BUG,           100, 15,   0      ;X_SCISSOR
 	move EFFECT_ATTACK_DOWN_HIT,    80, BUG,           100, 15, 100      ;LUNGE
 	move EFFECT_SPEED_DOWN_HIT,     50, BUG,           100, 20,   0      ;POUNCE

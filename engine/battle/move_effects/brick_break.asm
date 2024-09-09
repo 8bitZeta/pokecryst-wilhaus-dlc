@@ -27,7 +27,7 @@ BattleCommand_BrickBreak:
         inc bc ; LightScreenCount -> ReflectCount
     ; Check for Reflect
         bit SCREENS_REFLECT, [hl]
-        jr z, .reflect_done
+        ret z
     ; Remove Reflect
         res SCREENS_REFLECT, [hl]
     ; Set ReflectCount to 0

@@ -1125,3 +1125,21 @@ PeltedByHailText:
 	text "<USER>"
 	line "is pelted by hail!"
 	prompt
+
+BrokeLightScreenText:
+	text "<TARGET>'s"
+	line "LIGHT SCREEN"
+	cont "shattered!"
+	prompt
+
+BrokeReflectText:
+	text "<TARGET>'s"
+	line "REFLECT shattered!"
+	prompt
+
+
+UserStatusReturnedToNormalText:
+	text "<USER>'s"
+	line "status returned to"
+	cont "normal!"
+	prompt

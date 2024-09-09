@@ -315,6 +315,7 @@ MoveNames::
 	li "BRAVE BIRD"
 	li "DUALWINGBEAT"
 	li "CALM MIND"
+	li "COSMIC POWER"
 	li "ZEN HEADBUTT"
 	li "EXTRASENSORY"
 	li "X-SCISSOR"

@@ -183,18 +183,19 @@ ENDM
 	command hex                     ; b0
 	command venoshock               ; b1
 	command burn                    ; b2
-	command closecombat             ; b3
-	command overheat                ; b4
-	command acrobatics              ; b5
-	command calmmind                ; b6
-	command dragondance             ; b7
-	command bulkup                  ; b8
-	command cosmicpower             ; b9
+	command calmmind                ; b3
+	command cosmicpower             ; b4
+	command bulkup                  ; b5
+	command dragondance             ; b6
+	command closecombat             ; b7
+	command overheat                ; b8
+	command acrobatics              ; b9
 	command starthail               ; ba
 	command freezedry               ; bb
-	command refresh                 ; bc
+	command payback                 ; bc
 	command facade                  ; bd
-	command payback                 ; be
+	command refresh                 ; be
+	command brickbreak              ; bf
 DEF NUM_EFFECT_COMMANDS EQU const_value - 1
 
 	const_def -1, -1
