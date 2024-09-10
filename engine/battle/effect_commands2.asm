@@ -18,7 +18,7 @@ INCLUDE "engine/battle/move_effects/freeze_dry.asm"
 
 INCLUDE "engine/battle/move_effects/refresh.asm"
 
-INCLUDE "engine/battle/move_effects/payback.asm"
+;INCLUDE "engine/battle/move_effects/payback.asm"
 
 INCLUDE "engine/battle/move_effects/dragon_dance.asm"
 
@@ -27,6 +27,7 @@ INCLUDE "engine/battle/move_effects/bulk_up.asm"
 INCLUDE "engine/battle/move_effects/calm_mind.asm"
 
 INCLUDE "engine/battle/move_effects/cosmic_power.asm"
+
 
 BattleCommand_DoubleFlyingDamage:
 	ld a, BATTLE_VARS_SUBSTATUS3_OPP
@@ -86,3 +87,4 @@ BattleCommand_ResetStats:
 	dec b
 	jr nz, .next
 	ret
+

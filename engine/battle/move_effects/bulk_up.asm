@@ -30,7 +30,7 @@ BattleCommand_BulkUp: ; 37588
 ; Raise Attack and Defense
 
 	ld a, $1
-	ld [wKickCounter], a
+	ld [wBattleAnimParam], a
 	call AnimateCurrentMove
 	call BattleCommand_AttackUp
 	call BattleCommand_StatUpMessage

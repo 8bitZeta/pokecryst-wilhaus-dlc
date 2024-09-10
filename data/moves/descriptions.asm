@@ -273,7 +273,7 @@ MoveDescriptions1:
 	dw CovetDescription
 	dw FlareBlitzDescription
 	dw OverheatDescription
-	dw WillOWispDescription
+	;dw WillOWispDescription
 	dw MysticFireDescription
 	dw FlameChargeDescription
 	dw FireFangDescription
@@ -297,7 +297,7 @@ MoveDescriptions1:
 	dw HailDescription
 	dw TripleAxelDescription
 	dw FreezeDryDescription
-	dw AvalancheDescription
+	;dw AvalancheDescription
 	dw IceShardDescription
 	dw IceFangDescription
 	dw BrickBreakDescription
@@ -345,7 +345,7 @@ MoveDescriptions1:
 	dw NastyPlotDescription
 	dw SnarlDescription
 	dw NightSlashDescription
-	dw PaybackDescription
+	;dw PaybackDescription
 	dw FlashCannonDescription
 	dw IronDefenseDescription
 	dw MirrorShotDescription
@@ -1429,9 +1429,9 @@ OverheatDescription:
 	db   "Strong but lowers"
 	next "user's SPCL. ATK.@"
 
-WillOWispDescription: 
-	db   "Eerie flare that"
-	next "burns target.@"
+;WillOWispDescription: 
+;	db   "Eerie flare that"
+;	next "burns target.@"
 
 MysticFireDescription: 
 	db   "An attack that"
@@ -1525,9 +1525,9 @@ FreezeDryDescription:
 	db   "Super effective on"
 	next "water types also.@"
 
-AvalancheDescription: 
-	db   "2x damage if"
-	next "already attacked.@"
+;AvalancheDescription: 
+;	db   "2x damage if"
+;	next "already attacked.@"
 
 IceShardDescription: 
 	db   "Lets the user get"
@@ -1717,9 +1717,9 @@ NightSlashDescription:
 	db   "Has a high criti-"
 	next "cal hit ratio.@"
 
-PaybackDescription: 
-	db   "2x damage if"
-	next "already attacked.@"
+;PaybackDescription: 
+;	db   "2x damage if"
+;	next "already attacked.@"
 
 FlashCannonDescription: 
 	db   "An attack that may"

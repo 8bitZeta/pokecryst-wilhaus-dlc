@@ -182,7 +182,7 @@ ENDM
 	command curl                    ; af
 	command hex                     ; b0
 	command venoshock               ; b1
-	command burn                    ; b2
+	;command burn                    ; b2
 	command calmmind                ; b3
 	command cosmicpower             ; b4
 	command bulkup                  ; b5
@@ -192,7 +192,7 @@ ENDM
 	command acrobatics              ; b9
 	command starthail               ; ba
 	command freezedry               ; bb
-	command payback                 ; bc
+	;command payback                 ; bc
 	command facade                  ; bd
 	command refresh                 ; be
 	command brickbreak              ; bf

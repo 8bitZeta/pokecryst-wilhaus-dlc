@@ -5923,61 +5923,6 @@ BattleCommand_Confuse_CheckSnore_Swagger_ConfuseHit:
 	ret z
 	jp PrintDidntAffect2
 
-BattleCommand_Burn:
-; burn
-
-	ld a, BATTLE_VARS_STATUS_OPP
-	call GetBattleVar
-	bit BRN, a
-	jr nz, .burned
-	ld a, [wTypeModifier]
-	and $7f
-	jr z, .didnt_affect
-	ld c, FIRE
-	call CheckIfTargetIsSpecificType
-	ret z
-	call GetOpponentItem
-	ld a, b
-	cp HELD_PREVENT_BURN
-	jr nz, .no_item_protection
-	ld a, [hl]
-	ld [wNamedObjectIndexBuffer], a
-	call GetItemName
-	call AnimateFailedMove
-	ld hl, ProtectedByText
-	jp StdBattleTextBox
-
-.no_item_protection
-	ld a, BATTLE_VARS_STATUS_OPP
-	call GetBattleVarAddr
-	and a
-	jr nz, .failed
-	ld a, [wAttackMissed]
-	and a
-	jr nz, .failed
-	call CheckSubstituteOpp
-	jr nz, .failed
-	ld c, 30
-	call DelayFrames
-	call AnimateCurrentMove
-	ld a, $1
-	ldh [hBGMapMode], a
-	ld a, BATTLE_VARS_STATUS_OPP
-	call GetBattleVarAddr
-	set BRN, [hl]
-	call UpdateOpponentInParty
-	ld hl, ApplyBrnEffectOnAttack
-	call CallBattleCore
-	call UpdateBattleHuds
-	call PrintBurn
-	ld hl, UseHeldStatusHealingItem
-	jp CallBattleCore
-
-.burned
-	call AnimateFailedMove
-	ld hl, AlreadyBurnedText
-	jp StdBattleTextBox
-
 .failed
 	jp PrintDidntAffect2
 

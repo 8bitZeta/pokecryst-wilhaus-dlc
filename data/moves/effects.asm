@@ -2134,15 +2134,15 @@ Venoshock:
 	kingsrock
 	endmove
 
-DoBurn:
-	checkobedience
-	usedmovetext
-	doturn
-	stab
-	checkhit
-	checksafeguard
-	burn
-	endmove
+;DoBurn:
+	;checkobedience
+	;usedmovetext
+	;doturn
+	;stab
+	;checkhit
+	;checksafeguard
+	;burn
+	;endmove
 
 CalmMind:
 	checkobedience
@@ -2454,26 +2454,26 @@ BrickBreak:
 	kingsrock
 	endmove
 
-Payback:
-	checkobedience
-	usedmovetext
-	doturn
-	critical
-	damagestats
-	damagecalc
-	stab
-	damagevariation
-	payback
-	checkhit
-	moveanim
-	failuretext
-	applydamage
-	criticaltext
-	supereffectivetext
-	checkfaint
-	buildopponentrage
-	kingsrock
-	endmove
+;Payback:
+	;checkobedience
+	;usedmovetext
+	;doturn
+	;critical
+	;damagestats
+	;damagecalc
+	;stab
+	;damagevariation
+	;payback
+	;checkhit
+	;moveanim
+	;failuretext
+	;applydamage
+	;criticaltext
+	;supereffectivetext
+	;checkfaint
+	;buildopponentrage
+	;kingsrock
+	;endmove
 
 Facade:
 	checkobedience

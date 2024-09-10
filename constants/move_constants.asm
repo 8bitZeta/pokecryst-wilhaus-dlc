@@ -275,7 +275,7 @@
 	const COVET        ; 10a 
 	const FLARE_BLITZ  ; 10b 
 	const OVERHEAT     ; 10c 
-	const WILL_O_WISP  ; 10d 
+	;const WILL_O_WISP  ; 10d 
 	const MYSTIC_FIRE  ; 10e 
 	const FLAME_CHARGE ; 10f 
 	const FIRE_FANG    ; 110 
@@ -299,7 +299,7 @@
 	const HAIL         ; 122 
 	const TRIPLE_AXEL  ; 123 
 	const FREEZE_DRY   ; 124 
-	const AVALANCHE    ; 125 
+	;const AVALANCHE    ; 125 
 	const ICE_SHARD    ; 126 
 	const ICE_FANG     ; 127 
 	const BRICK_BREAK  ; 128 
@@ -347,7 +347,7 @@
 	const NASTY_PLOT   ; 152 
 	const SNARL        ; 153 
 	const NIGHT_SLASH  ; 154 
-	const PAYBACK      ; 155 
+	;const PAYBACK      ; 155 
 	const FLASH_CANNON ; 156 
 	const IRON_DEFENSE ; 157 
 	const MIRROR_SHOT  ; 158 

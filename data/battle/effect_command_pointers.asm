@@ -182,7 +182,7 @@ BattleCommandPointers:
 	dw BattleCommand_Curl ;; new moves start next line
 	dw BattleCommand_Hex
 	dw BattleCommand_Venoshock
-	dw BattleCommand_Burn
+	;dw BattleCommand_Burn
 	dw BattleCommand_CloseCombat
 	dw BattleCommand_Overheat
 	dw BattleCommand_Acrobatics
@@ -193,7 +193,7 @@ BattleCommandPointers:
 	dw BattleCommand_CosmicPower
 	dw BattleCommand_FreezeDry
 	dw BattleCommand_Facade
-	dw BattleCommand_Payback
+	;dw BattleCommand_Payback
 	dw BattleCommand_Refresh
 	dw BattleCommand_BrickBreak
 	assert_table_length NUM_EFFECT_COMMANDS

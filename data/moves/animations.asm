@@ -297,7 +297,7 @@ BattleAnimations::
 	dw BattleAnim_Covet
 	dw BattleAnim_FlareBlitz
 	dw BattleAnim_Overheat
-	dw BattleAnim_WillOWisp
+	;dw BattleAnim_WillOWisp
 	dw BattleAnim_MysticFire
 	dw BattleAnim_FlameCharge
 	dw BattleAnim_FireFang
@@ -321,7 +321,7 @@ BattleAnimations::
 	dw BattleAnim_Hail
 	dw BattleAnim_TripleAxel
 	dw BattleAnim_FreezeDry
-	dw BattleAnim_Avalanche
+	;dw BattleAnim_Avalanche
 	dw BattleAnim_IceShard
 	dw BattleAnim_IceFang
 	dw BattleAnim_BrickBreak
@@ -369,7 +369,7 @@ BattleAnimations::
 	dw BattleAnim_NastyPlot
 	dw BattleAnim_Snarl
 	dw BattleAnim_NightSlash
-	dw BattleAnim_Payback
+	;dw BattleAnim_Payback
 	dw BattleAnim_FlashCannon
 	dw BattleAnim_IronDefense
 	dw BattleAnim_MirrorShot
@@ -2748,7 +2748,7 @@ BattleAnim_Boomburst:
 BattleAnim_Covet:
 BattleAnim_FlareBlitz:
 BattleAnim_Overheat:
-BattleAnim_WillOWisp:
+;BattleAnim_WillOWisp:
 BattleAnim_MysticFire:
 BattleAnim_FlameCharge:
 BattleAnim_FireFang:
@@ -2771,7 +2771,7 @@ BattleAnim_MagicalLeaf:
 BattleAnim_Aromatherapy:
 BattleAnim_TripleAxel:
 BattleAnim_FreezeDry:
-BattleAnim_Avalanche:
+;BattleAnim_Avalanche:
 BattleAnim_IceShard:
 BattleAnim_IceFang:
 BattleAnim_BrickBreak:
@@ -2819,7 +2819,7 @@ BattleAnim_DarkPulse:
 BattleAnim_NastyPlot:
 BattleAnim_Snarl:
 BattleAnim_NightSlash:
-BattleAnim_Payback:
+;BattleAnim_Payback:
 BattleAnim_FlashCannon:
 BattleAnim_IronDefense:
 BattleAnim_MirrorShot:

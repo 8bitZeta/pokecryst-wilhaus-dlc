@@ -161,7 +161,7 @@ MoveEffectsPointers:
 	dw BabyDollEyes
 	dw Hex
 	dw Venoshock
-	dw DoBurn
+	;dw DoBurn
 	dw CalmMind
 	dw CosmicPower
 	dw BulkUp
@@ -180,7 +180,7 @@ MoveEffectsPointers:
 	dw Hail
 	dw FreezeDry
 	dw BrickBreak
-	dw Payback
+	;dw Payback
 	dw Facade
 	dw Refresh
 	assert_table_length NUM_MOVE_EFFECTS

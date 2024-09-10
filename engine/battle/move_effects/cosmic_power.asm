@@ -33,7 +33,7 @@ BattleCommand_CosmicPower: ; 37588
 ; Raise Defense and Sp. Defense
 
 	ld a, $1
-	ld [wKickCounter], a
+	ld [wBattleAnimParam], a
 	call AnimateCurrentMove
 	call BattleCommand_AttackUp
 	call BattleCommand_StatUpMessage

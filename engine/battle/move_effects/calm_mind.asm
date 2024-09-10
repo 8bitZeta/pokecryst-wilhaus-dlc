@@ -30,10 +30,10 @@ BattleCommand_CalmMind: ; 37588
 
 .raise
 
-; Raise SpAttack, SpDefense, and Speed.
+; Raise SpAttack and SpDefense
 
 	ld a, $1
-	ld [wKickCounter], a
+	ld [wBattleAnimParam], a
 	call AnimateCurrentMove
 	call BattleCommand_SpecialAttackUp
 	call BattleCommand_StatUpMessage

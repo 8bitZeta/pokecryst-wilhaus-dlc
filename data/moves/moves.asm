@@ -287,7 +287,7 @@ Moves1:
     move EFFECT_THIEF,              60, NORMAL,        100, 25,   0      ;COVET
 	move EFFECT_FLARE_BLITZ,       120, FIRE,          100, 15,  10      ;FLARE_BLITZ
 	move EFFECT_OVERHEAT,          130, FIRE,           90,  5,   0      ;OVERHEAT
-	move EFFECT_BURN,                0, FIRE,           85, 15,   0      ;WILL_O_WISP
+	;move EFFECT_BURN,                0, FIRE,           85, 15,   0      ;WILL_O_WISP
 	move EFFECT_SP_ATK_DOWN_HIT,    75, FIRE,          100, 10, 100      ;MYSTIC_FIRE
 	move EFFECT_SPEED_UP_HIT,       50, FIRE,          100, 20, 100      ;FLAME_CHARGE
 	move EFFECT_FIRE_FANG,          65, FIRE,           95, 15,  10      ;FIRE_FANG 
@@ -311,7 +311,7 @@ Moves1:
 	move EFFECT_HAIL,                0, ICE,           100,  5,   0      ;HAIL
 	move EFFECT_TRIPLE_KICK,        20, ICE,            90, 10,   0      ;TRIPLE_AXEL
 	move EFFECT_FREEZE_DRY,         70, ICE,           100, 20,  10      ;FREEZE_DRY
-	move EFFECT_PAYBACK,            60, ICE,           100, 10,   0      ;AVALANCHE
+	;move EFFECT_PAYBACK,            60, ICE,           100, 10,   0      ;AVALANCHE
 	move EFFECT_PRIORITY_HIT,       40, ICE,           100, 30,   0      ;ICE_SHARD
 	move EFFECT_ICE_FANG,           65, ICE,            95, 15,  10      ;ICE_FANG
 	move EFFECT_BRICK_BREAK,        75, FIGHTING,      100, 15,   0      ;BRICK_BREAK
@@ -359,7 +359,7 @@ Moves1:
 	move EFFECT_SP_ATK_UP_2,         0, DARK,          100, 20,   0      ;NASTY_PLOT
 	move EFFECT_SP_ATK_DOWN_HIT,    55, DARK,           95, 15, 100      ;SNARL
 	move EFFECT_NORMAL_HIT,         70, DARK,          100, 15,   0      ;NIGHT_SLASH
-	move EFFECT_PAYBACK,            50, DARK,          100, 10,   0      ;PAYBACK
+	;move EFFECT_PAYBACK,            50, DARK,          100, 10,   0      ;PAYBACK
 	move EFFECT_SP_DEF_DOWN_HIT,    80, STEEL,         100, 10,  10      ;FLASH_CANNON
 	move EFFECT_DEFENSE_UP_2,        0, STEEL,         100, 15,   0      ;IRON_DEFENSE
 	move EFFECT_ACCURACY_DOWN_HIT,  65, STEEL,          85, 10,  30      ;MIRROR_SHOT
