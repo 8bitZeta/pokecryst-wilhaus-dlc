@@ -50,4 +50,4 @@ BattleCommand_CosmicPower: ; 37588
 	call GetStatName
 	call AnimateFailedMove
 	ld hl, WontRiseAnymoreText
-	jp StdBattleTextBox
+	jp StdBattleTextbox

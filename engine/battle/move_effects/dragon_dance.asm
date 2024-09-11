@@ -14,7 +14,7 @@ BattleCommand_DragonDance: ; 37588
 
 ; If no stats can be increased, don't.
 
-; Attack
+; Attack+-
 	ld a, [bc]
 	cp MAX_STAT_LEVEL
 	jr c, .raise
@@ -48,4 +48,4 @@ BattleCommand_DragonDance: ; 37588
 	call GetStatName
 	call AnimateFailedMove
 	ld hl, WontRiseAnymoreText
-	jp StdBattleTextBox
+	jp StdBattleTextbox
